@@ -93,7 +93,6 @@ assignment4-daa/
 ├── README.md
 └── .gitignore
 
-text
 
 ---
 
@@ -107,19 +106,16 @@ text
 
 mvn clean compile
 
-text
 
 ### Run All Tests
 
 mvn test
 
-text
 
 ### Run the Main Application
 
 mvn exec:java -Dexec.mainClass="kz.edu.daa.Main"
 
-text
 
 Or directly from IntelliJ: Right-click `Main.java` → Run
 
@@ -127,7 +123,6 @@ Or directly from IntelliJ: Right-click `Main.java` → Run
 
 mvn exec:java -Dexec.mainClass="kz.edu.daa.utils.DatasetGenerator"
 
-text
 
 ---
 
@@ -137,7 +132,6 @@ text
 
 Graph graph = GraphLoader.loadFromJson("data/tasks.json");
 
-text
 
 ### Finding Strongly Connected Components
 
@@ -145,7 +139,6 @@ SimpleMetrics metrics = new SimpleMetrics();
 TarjanSCC scc = new TarjanSCC(graph, metrics);
 List<List<Integer>> components = scc.findSCCs();
 
-text
 
 ### Computing Shortest Paths
 
@@ -154,7 +147,6 @@ sp.computeShortestPaths();
 long distance = sp.getDistance(targetVertex);
 List<Integer> path = sp.getPath(targetVertex);
 
-text
 
 ### Computing Critical Path
 
@@ -162,7 +154,6 @@ DAGLongestPath lp = new DAGLongestPath(graph, sourceVertex, metrics);
 lp.computeLongestPaths();
 long criticalPath = lp.getCriticalPathLength();
 
-text
 
 ---
 
@@ -231,7 +222,6 @@ Tarjan SCC: 0.0936 ms
 Kahn Topological Sort: 0.5541 ms
 DAG Shortest Path: 0.0745 ms
 
-text
 
 ---
 
@@ -250,7 +240,6 @@ Datasets use the following JSON format:
 "weight_model": "edge"
 }
 
-text
 
 **Fields:**
 - `directed` (boolean): Whether graph is directed
@@ -295,7 +284,6 @@ Edges explored: 7
 DFS visits: 8
 ...
 
-text
 
 ---
 
@@ -323,11 +311,5 @@ text
 
 ---
 
-## Author
+## Author - Amangeldinov Nurbol
 DAA Assignment 4 Implementation
-Date: November 2025
-
----
-
-## License
-Educational Project
