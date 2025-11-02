@@ -1,0 +1,11 @@
+Dataset,Vertices,Edges,Type,SCCs,Tarjan(ms),Kahn(ms),DAG-SP(ms),DAG-LP(ms),DFS-Visits,Edges-Explored,Critical-Path
+original_tasks,8,7,DAG,6,0,0,0,0,8,7,8
+dataset_small_cycles,8,8,DAG,6,0,0,0,0,8,8,14
+dataset_small_dag,6,6,DAG,6,0,0,0,0,6,6,11
+dataset_small_mixed,7,8,DAG,3,0,0,0,0,7,8,4
+dataset_medium_sparse,15,8,DAG,15,0,0,0,0,15,8,0
+dataset_medium_dense,12,47,DAG,1,0,0,0,0,12,47,0
+dataset_medium_multiple_scc,18,20,DAG,12,0,0,0,0,18,20,17
+dataset_large_sparse,30,54,DAG,30,0,0,0,0,30,54,39
+dataset_large_dense,25,208,DAG,1,0,0,0,0,25,208,0
+dataset_large_complex,40,97,DAG,4,0,0,0,0,40,97,24
